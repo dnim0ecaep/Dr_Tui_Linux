@@ -2,17 +2,18 @@
 # install help
 #Requires "eza"
 cat << 'EOF' >> ~/.bashrc
-alias dir='eza --long --header –icons --group-directories-first --sort=name --color=always --time-style=long-iso'
-alias ddir='eza --long --header –icons --group-directories-first --sort=name --color=always --time-style=long-iso --grid'
-alias ls='eza --long --header –icons --group-directories-first --sort=name --color=always --time-style=long-iso'
+alias dir='eza --long --header --group-directories-first --sort=name --color=always --icons --time-style=long-iso'
+alias ddir='eza --long --header --group-directories-first --sort=name --color=always --icons --time-style=long-iso --grid'
+alias ls='eza --long --header --group-directories-first --sort=name --color=always --icons --time-style=long-iso'
+alias lls='eza --long --header --group-directories-first --sort=name --color=always --icons --time-style=long-iso --grid'
 PS1='\[\e[1;32m\]\u@\h:\[\e[1;34m\]\w \[\e[0m\]\$ '
 EOF
 
 
 
 
-sudo cp drdos-help.sh /usr/local/bin/drdos-help
-sudo chmod +x /usr/local/bin/drdos-help
+sudo cp drtui-help.sh /usr/local/bin/drtui-help
+sudo chmod +x /usr/local/bin/drtui-help
 
 sudo cp menu-maker /usr/local/bin/
 sudo chmod +x /usr/local/bin/menumaker
