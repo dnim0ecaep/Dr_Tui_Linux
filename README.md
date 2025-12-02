@@ -81,6 +81,9 @@ Directories      (Light Blue RGB) di=38;2;67;163;255
 
 
 git clone https://github.com/dnim0ecaep/drtui_linux.git
+
 cd drtui_linux
+
 chmod +x *.sh
+
 ./drtui-install.sh
